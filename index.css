@@ -1,0 +1,131 @@
+:root{
+    --color-1: #DFD8CA;
+}
+
+*{
+    font-family: Regular, Semibold and Bold;
+    font-size: 24px; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+    background-color: #DFD8CA;
+   
+}
+
+.peter{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.header{
+    background-color: var(--color-1);
+    padding: 12px 0;
+    line-height: 1.5rem;
+}
+
+.header .nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.logo a i{
+    font-size: 35px;
+    color: #B91646;
+}
+
+.header .nav ul li a{
+    color: #B91646;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+    
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+    color: #105652;
+    text-decoration: none;
+}
+
+.nav-toggler{
+    height: 34px;
+    width: 44px;
+    background-color: #105652;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    display: none;
+    margin-right: 15px;
+
+
+    
+}
+.nav-toggler:focus{
+    outline: none;
+
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:  auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-toggler span::before,
+.nav-toggler span::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-1);
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.nav-toggler span::before{
+    transform: translateY(-6px);
+}
+.nav-toggler span::after{
+    transform: translateY(6px);
+}
+
+
+@media(max-width: 991px){
+    .nav-toggler{
+        display: block;
+
+    }
+    .header .nav{
+        width: 100%;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.6s ease;
+    }
+    .header .nav.open{
+        visibility: visible;
+    }
+    .header .nav ul li{
+        display: block;
+        margin: 2.5rem;
+
+    }
+    .header .nav ul{
+        padding: 0 3px;
+        
+    }
+    }
+
+
