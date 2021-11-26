@@ -46,11 +46,11 @@ ul{
 
 .logo a i{
     font-size: 35px;
-    color: #B91646;
+    color: #FFAB4C;
 }
 
 .header .nav ul li a{
-    color: #B91646;
+    color: #FFAB4C;
     transition: all 0.5s ease;
     text-transform: capitalize;
     
@@ -133,43 +133,14 @@ ul{
         padding: 0 3px;
         
     }
-    }
-
-.max-width{
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 80px;
 }
 
-.homed{
-   display: flex;
-   background-image: url("assets/image.png"); 
-   background-repeat: no-repeat;
-   background-position: center;
-   height: 100vh;
-   min-height: 500px;
-   background-color: #000000;
-   right: 20%;
-   
-  
-  
-}
 .home-content{
     position: absolute;
     left: 13%;
     
 }
-.homed{
-  margin-top: -6rem;
-}
-.text{
-   font-size: 3rem;
-}
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
+
 
 /* navbar styling */
 .navbar{
@@ -222,7 +193,7 @@ ul{
 /* menu btn styling */
 .menu-btn{
     color: #fff;
-    font-size: 23px;
+    font-size: 20px;
     cursor: pointer;
     display: none;
 }
@@ -232,18 +203,18 @@ ul{
     display: flex;
     background: url("assets/ran.jpg") no-repeat center;
     height: 100vh;
-    color: #fff;
+    color: #FFAB4C;
     min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Regular, Semibold and Bold;
 }
 .home .max-width{
     margin: auto 0 auto 40px;
 }
 .home .home-content .text-1{
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 .home .home-content .text-2{
-    font-size: 75px;
+    font-size: 1.8rem;
     font-weight: 600px;
     margin-left: -3px;
 }
@@ -275,7 +246,7 @@ section{
     padding: 100px 0;
 }
 .about, .services, .skills, .contact, footer{
-    font-family: "Poppins", sans-serif;
+    font-family: Regular, Semibold and Bold;
 }
 .about .about-content, 
 .services .serv-content, 
@@ -291,9 +262,12 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
+    color: #FFAB4C;
+    text-decoration: underline;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: "Ubuntu", sans-serif;
+    font-family: Regular, Semibold and Bold;
+    
 }
 section .title::before{
     content: "";
@@ -302,7 +276,7 @@ section .title::before{
     left: 50%;
     width: 300px;
     height: 3px;
-    background: #111;
+    
     transform: translateX(-50%);
 }
 section .title::after{
@@ -316,10 +290,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* about section styling */
-.about .title::after{
-    content: "Learn More About Me";
-}
+
 .about .about-content .left{
     width: 45%;
     
@@ -335,16 +306,18 @@ section .title::after{
     width: 55%;
 }
 .about .about-content .right .text{
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 600;
+    color: #FFAB4C;
     font-family: Regular, Semibold and Bold;
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: #FFAB4C;
 }
 .about .about-content .right p{
     text-align: justify;
+    color: #FFAB4C;
 }
 .about .about-content .right a{
     display: inline-block;
