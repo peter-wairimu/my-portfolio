@@ -322,11 +322,13 @@ section .title::after{
 }
 .about .about-content .left{
     width: 45%;
+    
 }
+
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
+    height: 700px;
+    width: 500px;
+    object-fit: contain;
     border-radius: 6px;
 }
 .about .about-content .right{
@@ -335,6 +337,7 @@ section .title::after{
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
+    font-family: Regular, Semibold and Bold;
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
@@ -351,6 +354,7 @@ section .title::after{
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
+    font-family: Regular, Semibold and Bold;
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
@@ -364,6 +368,7 @@ section .title::after{
 .services{
     color: #fff;
     background: #111;
+    font-family: Regular, Semibold and Bold;
 }
 .services .title::before{
     background: #fff;
@@ -393,14 +398,17 @@ section .title::after{
 .services .serv-content .card i{
     font-size: 50px;
     color: crimson;
+    font-family: Regular, Semibold and Bold;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
     color: #fff;
+    font-family: Regular, Semibold and Bold;
 }
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
+    font-family: Regular, Semibold and Bold;
     margin: 10px 0 7px 0;
 }
 
@@ -414,6 +422,7 @@ section .title::after{
 .skills .skills-content .left .text{
     font-size: 24px;
     font-weight: 600;
+    font-family: Regular, Semibold and Bold;
     margin-bottom: 10px;
 }
 .skills .skills-content .left p{
@@ -422,6 +431,7 @@ section .title::after{
 .skills .skills-content .left a{
     display: inline-block;
     background: crimson;
+    font-family: Regular, Semibold and Bold;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -475,6 +485,12 @@ section .title::after{
 .skills .skills-content .right .flask::before{
     width: 55%;
 }
+.skills .skills-content .right .boot::before{
+    width: 82%;
+}
+.skills .skills-content .right .bulma::before{
+    width: 60%;
+}
 .skills .skills-content .right .django::before{
     width: 70%;
 }
@@ -493,6 +509,7 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 18px;
+    font-family: Regular, Semibold and Bold;
 }
 .contact .contact-content .left{
     text-align: justify;
@@ -552,6 +569,7 @@ section .title::after{
     resize: none;
 }
 .contact .right form .button{
+    font-family: Regular, Semibold and Bold;
     height: 47px;
     width: 170px;
 }
@@ -564,11 +582,13 @@ section .title::after{
     font-weight: 500;
     border-radius: 6px;
     background: crimson;
+    font-family: Regular, Semibold and Bold;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
     color: crimson;
+    font-family: Regular, Semibold and Bold;
     background: none;
 }
 
@@ -578,6 +598,7 @@ footer{
     padding: 20px 23px;
     color: #fff;
     text-align: center;
+    font-family: Regular, Semibold and Bold;
 }
 footer span a{
     color: crimson;
@@ -704,4 +725,9 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
+ }
+
+ .bars{
+    font-family: Regular, Semibold and Bold;
+    
  }
