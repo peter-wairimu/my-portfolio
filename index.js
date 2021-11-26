@@ -15,14 +15,14 @@ $(document).ready(function(){
 
 // typed animation script
 var typed = new Typed(".typing",{
-    strings:["Full Stack Developer.", "Software Engineer.", "Designer.", "Freelancer."],
+    strings:["Full Stack Developer."],
     typeSpeed: 120,
     backSpeed: 60,
     loop: true
 });
 
 var typed = new Typed(".typing2",{
-    strings:["Programmer.", "Full Stack Developer.","Designer."],
+    strings:["Designer.","Frontend Developer.","Backend Developer."],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
@@ -47,3 +47,17 @@ function navToggle() {
     }
 
 }
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("nav");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+

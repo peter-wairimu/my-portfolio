@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 :root{
-    --color-1: #000000;
+    --color-1:#000;
 }
 
 *{
@@ -23,7 +23,7 @@ ul{
 .container{
     max-width: 1170px;
     margin: auto;
-    background-color: #000000;
+    background-color: #000;
    
 }
 
@@ -133,75 +133,32 @@ ul{
         padding: 0 3px;
         
     }
+    }
+
+.max-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 80px;
 }
 
-.home-content{
-    position: absolute;
-    left: 13%;
-    
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
 
-
-/* navbar styling */
-.navbar{
+.sticky {
     position: fixed;
+    top: 0;
     width: 100%;
-    z-index: 999;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-}
-.navbar.sticky{
-    padding: 15px 0;
-    background-color: crimson;
-}
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
-}
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
+  }
 
-.navbar .menu li a{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: crimson;
-}
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
-/* menu btn styling */
-.menu-btn{
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-}
 
 /* home section */
 .home{
     display: flex;
-    background: url("assets/ran.jpg") no-repeat center;
+    background: url("assets/com5.jpg") no-repeat center;
+    background-size: cover;
     height: 100vh;
     color: #FFAB4C;
     min-height: 500px;
@@ -219,27 +176,26 @@ ul{
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    font-size: 40px;
+    font-size: 1.5rem;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
+    background: #FFAB4C;
+    color: #105652;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #105652;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
-    background: none;
+    color: #105652;
+    background: #fff;
 }
 /* Similar styling for content */
 section{
@@ -248,6 +204,13 @@ section{
 .about, .services, .skills, .contact, footer{
     font-family: Regular, Semibold and Bold;
 }
+
+
+
+
+
+
+
 .about .about-content, 
 .services .serv-content, 
 .skills .skills-content,
@@ -276,7 +239,6 @@ section .title::before{
     left: 50%;
     width: 300px;
     height: 3px;
-    
     transform: translateX(-50%);
 }
 section .title::after{
@@ -321,35 +283,42 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
+    background: #FFAB4C;
+    color: #105652;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     font-family: Regular, Semibold and Bold;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #105652;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: #105652;
     background: none;
+}
+
+.text{
+    color: #FFAB4C;
+}
+
+.info span{
+    color: #FFAB4C;
+}
+
+
+.she{
+    color: #FFAB4C;
 }
 
 /* Services Section */
 .services{
-    color: #fff;
+    color: #FFAB4C;
     background: #111;
     font-family: Regular, Semibold and Bold;
 }
-.services .title::before{
-    background: #fff;
-}
-.services .title::after{
-    background: #111;
-    content: "Some of My Projects";
-}
+
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -360,7 +329,7 @@ section .title::after{
     transform: scale(1.05);
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: #105652;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -385,10 +354,14 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+
+ 
+
+
+
+
 /* My Projects Section Styling */
-.skills .title:after{
-    content: "Skills";
-}
+
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -444,7 +417,7 @@ section .title::after{
     width: 80%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: #105652;
 }
 .skills .skills-content .right .html::before{
     width: 95%;
@@ -458,6 +431,9 @@ section .title::after{
 .skills .skills-content .right .flask::before{
     width: 55%;
 }
+.skills .skills-content .right .figma::before{
+    width: 65%;
+}
 .skills .skills-content .right .boot::before{
     width: 82%;
 }
@@ -467,14 +443,15 @@ section .title::after{
 .skills .skills-content .right .django::before{
     width: 70%;
 }
+.skills .skills-content .right .sql::before{
+    width: 62%;
+}
 .skills .skills-content .right .angular::before{
     width: 50%;
 }
 
 /* contact section styles */
-.contact .title::after{
-    content: "Get in Touch";
-}
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -500,7 +477,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #FFAB4C;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -535,7 +512,7 @@ section .title::after{
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: "Poppins", sans-serif;
+    font-family: Regular, Semibold and Bold;
 }
 .contact .right form  .textarea textarea{
     padding-top: 10px;
@@ -549,37 +526,110 @@ section .title::after{
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid crimson;
-    color: #fff;
+    border: 2px solid #105652;
+    color: #105652;
     font-size: 20px;
     font-weight: 500;
     border-radius: 6px;
-    background: crimson;
+    background: #FFAB4C;
     font-family: Regular, Semibold and Bold;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
-    color: crimson;
+    color: #105652;
     font-family: Regular, Semibold and Bold;
     background: none;
 }
+.icon{
+    padding: 0 3rem;
+    text-align: center;
+    
+
+}
+
+
+.social a {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    color: #FFAB4C;
+    margin: 1.4rem;
+
+}
+
+.social a:hover {
+    color: #105652;
+}
+
+.heading {
+    text-align: center;
+
+}
+.heading h1 {
+    font-size: 1.8rem;
+    
+    
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+
+.services-box {
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid #105652;
+    box-shadow: 0 2px 7px #FFAB4C;
+
+
+
+}
+
+.services-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.7rem 0 0.4rem;
+
+
+}
+
+.services-box .bx {
+    padding-top: 2rem;
+    font-size: 24px;
+    color: yellow;
+
+}
+
+.services-box a {
+    color: #FFAB4C;
+    font-size: var(--p-font);
+    font-weight: 500;
+
+}
+
+
+
+
 
 /* Footer Section Styles */
 footer{
-    background: #111;
     padding: 20px 23px;
-    color: #fff;
+    color: #FFAB4C;
     text-align: center;
     font-family: Regular, Semibold and Bold;
 }
-footer span a{
-    color: crimson;
-    text-decoration: none;
-}
-footer span a:hover{
-    text-decoration: underline;
-}
+
+
 
 
 

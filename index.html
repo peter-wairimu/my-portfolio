@@ -11,9 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
+    
     <header class="header">
         <div class="container">
-            <div class="peter align-items-center justify-content-between">
+            <div class="peter align-items-center justify-content-between" id="nav">
                 <div class="logo">
                     <a href=""><i class="bi bi-moon-stars"></i></a>
                 </div>
@@ -23,11 +24,11 @@
                 <nav class="nav">
                     <ul>
                         <li><a href="" class="active">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#port">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="">Testimonial</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
 
 
@@ -39,22 +40,22 @@
    
 
     <!-- home section starts here -->
-    <section class="home" id="home">
+    <section class="home" id="home" style="margin-bottom: -2rem;">
         <div class="max-width">
-            <div class="home-content">
+            <div class="home-content" >
                 <div class="text-1">Hi, I'm </div>
                 <div class="text-2">Peter Chege Wairimu</div>
-                <div class="text-3">And i am a <span class="typing" style="color: #105652; font-size: 1.3rem;"></span></div>
+                <div class="text-3">And I'am a <span class="typing" style="color: #105652; font-size: 1.3rem; font-weight: bold;"></span></div>
                 <a href="#contact">Hire Me</a>
                 
             </div>
             
         </div>
-        
+       
     </section>
 
     <!-- about Section -->
-    <section class="about" id="about">
+    <section class="about" id="about" style="margin-bottom: -8rem;">
         <div class="max-width">
             <h2 class="title">About Me</h2>
             <div class="about-content">
@@ -63,7 +64,8 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Peter <span class="typing2"style="color: #105652; font-size: 1.3rem;" ></span></div>
-                    <p>I identify and develop opportunities. I'm a nice fun and friendly person, I'm honest and punctual, I work well in a team but also on my own as I like to set myself goals which I will achieve, I have good listening and communication skills. I have a creative mind and am always up for new challenges.</p>
+                    <p>I have  less than a year of experience as a  fullstack developer with Moringa school. In my short time there, I've already contributed to over a dozen projects.
+                       Ideally, I would like to continue to specialize in  software engineering. Aside from coding am a football fan, i like travelling and also reading books </p>
                     <a href="#contact">Contact Me</a>
                 </div>
             </div>
@@ -71,14 +73,14 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="skills" id="skills">
+    <section class="skills" id="skills" >
         <div class="max-width">
-            <h2 class="title">Competencies</h2>
+            <h2 class="title">Qualifications</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">My Skills.</div>
-                    <p>Over time i have been able to learn and understand some few languages and frameworks that have been instrumental to building my personal profile as a fullstack developer. These are some of them and the level of understanding i have in each language/framework..</p>
-                    <a href="#">Read More</a>
+                    <div class="text">Skills.</div>
+                    <p class="she">Over time I have been able to learn and understand some few languages and frameworks that have been instrumental in my personal growth as a fullstack developer. These are some of them and the level of understanding i have in each language/framework..</p>
+                    <a href="#" style="color: #105652; background-color: #FFAB4C; border: 2px solid #105652;">Read More</a>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -104,14 +106,14 @@
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>Python-Flask</span>
+                            <span>Python/Flask</span>
                             <span>55%</span>
                         </div>
                         <div class="line flask"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>Bootstarp</span>
+                            <span>Bootstrap</span>
                             <span>86%</span>
                         </div>
                         
@@ -127,10 +129,24 @@
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>Python-Django</span>
+                            <span>Python/Django</span>
                             <span>70%</span>
                         </div>
                         <div class="line django"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>SQL/postgres</span>
+                            <span>62%</span>
+                        </div>
+                        <div class="line sql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Figma</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="line figma"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
@@ -143,34 +159,66 @@
             </div>
 
         </div>
+        <section class="services" id="services">
+            <div class="heading">
+                <h1>Services</h1>
+                
+            </div>
+            <div class="services-content">
+                <!-- Box 1 -->
+                <div class="services-box">
+                    <i class="bx bx-code-alt"></i>
+                    <h3>Frontend<br>Developer</h3>
+                    <a href="#">Learn More</a>
+                </div>
+                <!-- Box 2 -->
+                <div class="services-box">
+                    <i class="bx bx-server"></i>
+                    <h3>Backend<br>Developer</h3>
+                    <a href="#">Learn More</a>
+                </div>
+    
+                <!-- Box 3 -->
+                <div class="services-box">
+                    <i class="bx bx-brush"></i>
+                    <h3>UI/UX<br>Designer</h3>
+                    <a href="#">Learn More</a>
+                </div>
+    
+            </div>
+        </section>
+
+
+
     </section>
         <!-- Projects Section -->
-        <section class="services" id="services">
+        <section class="services" id="port">
             <div class="max-width">
-                <h2 class="title">My Projects.</h2>
+                <h2 class="title">Portfolio.</h2>
                     <div class="serv-content">
+        
                         <div class="card">
                             <div class="box">
-                                <div class="text">Eat, Sleep, Blog</div>
-                                <p style="font-family: Regular, Semibold and Bold;">This is a Python built web app that allows a user to create a blog post and have it posted only after signing up and logging in. The web app provides a list of blogs posted by other users.</p>
-                                <img src="assets/home.jpg" alt="html" style="height: 150px; width: 80%;">
-                                <a href="https://fuzu-pay-hr-frontend.netlify.app/" style="color: #fff;">View</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="box">
-                                <div class="text">Birth Date Calculator</div>
-                                <p>Website to match the day you were born with your Ghanian Akan name. This web app matches the day you were born with your Ghanian Akan Name</p>
+                                <div class="text"> <strong>Git Search</strong></div>
+                                <p>It is a web app where  a user can get to search for other github users see how many follower one has and also the number of repos he or she has.</p>
                                 <img src="assets/f2.png" alt="html" style="height: 150px; width: 100%;">
-                                <a href="https://peter-wairimu.github.io/git_search/" style="color: #fff;">View</a>
+                                <a href="https://peter-wairimu.github.io/git_search/" style="color: #FFAB4C;">View</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="box">
-                                <div class="text">InstaK</div>
-                                <p>This is a clone of the famous Instagram Web application developed using the use of Django Framework.</p>
+                                <div class="text"> <strong>Movie Api</strong></div>
+                                <p>It's an app where a user gets to see all the latest movies as they are realeased and also write a review on their favorite once.</p>
                                 <img src="assets/fu1.png" alt="html" style="height: 150px; width: 100%;">
-                                <a href="https://centiment.herokuapp.com/" style="color: #fff;">View</a>
+                                <a href="https://centiment.herokuapp.com/" style="color: #FFAB4C;">View</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <div class="text"><strong>Fuzupay</strong></div>
+                                <p>Its a web application that keeps tracks  of all records of a company including all the employees information</p>
+                                <img src="assets/home.jpg" alt="html" style="height: 150px; width: 100%;">
+                                <a href="https://fuzu-pay-hr-frontend.netlify.app/" style="color: #FFAB4C;">View</a>
                             </div>
                         </div>
                     </div>
@@ -183,29 +231,40 @@
                 <h2 class="title">Contact Me.</h2>
                <div class="div contact-content">
                 <div class="column left">
-                    <div class="text" style="margin-top: -32px;">Get in Touch</div>
-                    <p>Hey, I'm Kevin Kipyegon, a Full Stack Developer. Able to code web services and APIs used by front-end developers. Also, I can be responsible for server-side web application logic as well as the integration of the front-end part. Shoot me an email for further enquiries.</p>
-                    <div class="icons">
+                    <div class="text" style="margin-top: -32px; color: #FFAB4C; font-size: 1.4rem;"><strong>Contact Me</strong></div>
+                    <p style="color: #FFAB4C;">Hey, I'm peter Wairimu, a Full Stack Developer. </p>
+                    <div class="icons" style="color: #FFAB4C;">
                         <div class="row">
-                            <i class="fas fa-user"></i>
+                            <i class="bi bi-person-check"></i>
                             <div class="info">
                                 <div class="head">Name</div>
-                                <div class="sub-title">Kevin Kipyegon</div>
+                                <div class="sub-title" style="color: #FFAB4C;">Peter wairimu</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="bi bi-geo-alt"></i>
                             <div class="info">
                                 <div class="head">Address</div>
-                                <div class="sub-title">4016, Nakuru</div>
+                                <div class="sub-title" style="color: #FFAB4C;">2018, Kikuyu</div>
                             </div>
                         </div>
+                        
                         <div class="row">
-                            <i class="fas fa-envelope"></i>
+                            <i class="bi bi-envelope-check"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">kevinkipyegon20@gmail.com</div>
+                                <div class="sub-title" style="color: #FFAB4C;">chegewairimu66@gmail.com</div>
                             </div>
+                            
+                        </div>
+                        
+                        <div class="row">
+                            <i class="bi bi-telephone-inbound"></i>
+                            <div class="info">
+                                <div class="head">Phone Number</div>
+                                <div class="sub-title" style="color: #FFAB4C;">0707569387</div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -232,13 +291,23 @@
                </div>
             </div>
         </section>
+        <div class="icon">
+            <div class="social">
+                <a href="https://github.com/peter-wairimu"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            
+        </div>
 
         <!-- Footer Section -->
 
         <footer>
-            <span>Created By <a href="https://twitter.com/kev_af">@kevaf</a> <span class="far fa-copyright"> 2021 All Rights Reserved</span></span>
+            <span>Created By peterwairimu <span> &copy 2021 All Rights Reserved</span></span>
         </footer>
-    
+
     <script src="index.js"></script>
 </body>
 </html>
