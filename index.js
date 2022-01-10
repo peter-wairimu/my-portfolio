@@ -1,17 +1,17 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if(this.scrollY > 20){
-            $(".navbar").addClass("sticky");
-        }else{
-            $(".navbar").removeClass("sticky");
-        }
-    });
-    // toogle menu script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active")
-        $('.menu-btn i').toggleClass("active")
-    });
-});
+// $(document).ready(function(){
+//     $(window).scroll(function(){
+//         if(this.scrollY > 20){
+//             $(".navbar").addClass("sticky");
+//         }else{
+//             $(".navbar").removeClass("sticky");
+//         }
+//     });
+//     // toogle menu script
+//     $('.menu-btn').click(function(){
+//         $('.navbar .menu').toggleClass("active")
+//         $('.menu-btn i').toggleClass("active")
+//     });
+// });
 
 // typed animation script
 var typed = new Typed(".typing",{
@@ -28,36 +28,36 @@ var typed = new Typed(".typing2",{
     loop: true
 });
 
-const navToggler = document.querySelector(".nav-toggler");
+// const navToggler = document.querySelector(".nav-toggler");
 
-navToggler.addEventListener("click",navToggle);
+// navToggler.addEventListener("click",navToggle);
 
 
-function navToggle() {
+// function navToggle() {
 
-    navToggler.classList.toggle("active");
-    const nav = document.querySelector(".nav");
-    nav.classList.toggle("open");
+//     navToggler.classList.toggle("active");
+//     const nav = document.querySelector(".nav");
+//     nav.classList.toggle("open");
 
-    if(nav.classList.contains("open")){
-        nav.style.maxHeight = nav.scrollHeight + "px";
-    }
-    else{
-        nav.removeAttribute("style")
-    }
+//     if(nav.classList.contains("open")){
+//         nav.style.maxHeight = nav.scrollHeight + "px";
+//     }
+//     else{
+//         nav.removeAttribute("style")
+//     }
 
-}
+// }
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("nav");
-var sticky = navbar.offsetTop;
+// var navbar = document.getElementById("nav");
+// var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
 
